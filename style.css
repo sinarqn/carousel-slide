@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.carousel-container{
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-slide{
+    display: flex;
+    width: 7200px;
+    height: 100%;
+}
+.carousel-slide div{
+    width: 900px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 2px 5px black;
+
+}
+.carousel-slide div span{
+    position: absolute;
+    color: #000;
+    background-color: blanchedalmond;
+    padding: 0.5rem 0.75rem;
+    bottom: 0;
+    font-size: 2rem;
+    border-radius: 10px 10px 0 0;
+}
+#nextBtn,
+#prevBtn{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    background-color: #111;
+    color: burlywood;
+    border: none;
+    outline: none;
+    padding: 1rem 0.5rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    border-radius: 50% 0 0 50%;
+}
+#prevBtn{
+    left: 0;
+    border-radius: 0 50% 50% 0;
+}
+#nextBtn:hover,
+#prevBtn:hover{
+    background-color: burlywood;
+    color: #111;
+}
